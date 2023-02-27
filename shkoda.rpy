@@ -17,6 +17,7 @@
     $ karlik1 = Character(u'Лысый карлик', color="808080", what_color="E2c778",)
     $ karlik2 = Character(u'карлик 1', color="808080", what_color="E2c778",)
     $ karlik3 = Character(u'карлик 2', color="808080", what_color="E2c778",)
+
     $ draiv = "mods/shkoda_aktavia/sound/Electric Youth - A Real Hero.mp3"
     image obdr = "mods/shkoda_aktavia/kartinki/obdr.jpg"
     $ fnaf = "mods/shkoda_aktavia/sound/fnaf_rofl.mp3"
@@ -156,6 +157,11 @@
     $ usa = "mods/shkoda_aktavia/kartinki/Keks_prizident/after dark.mp3"
     $ otel_sound = "mods/shkoda_aktavia/kartinki/Keks_prizident/lift music.mp3"
     votes = "mods/shkoda_aktavia/kartinki/Keks_prizident/vibori.png"
+    $ domofon = "mods/shkoda_aktavia/kartinki/Keks_prizident/domofon.mp3"
+    $ bom2 = "mods/shkoda_aktavia/kartinki/Keks_prizident/bom2.mp3"
+    $ contus = "mods/shkoda_aktavia/kartinki/Keks_prizident/contus.mp3"
+    $ crickets = "mods/shkoda_aktavia/kartinki/Keks_prizident/crickets.mp3"
+    image kvartira_boom = "mods/shkoda_aktavia/kartinki/keks_prizident/kvartira_boom.png"
 label shkoda_start:
     "..."
     "..."
@@ -835,7 +841,7 @@ label opus:
     "Толстая масса пуляет в Искандера струёй жира, отчего последний отлетает в стену, сильно ударившись головой"
     "Искандер потерял сознание"
     "На запах жира прибегает некто в смокинге и трусах"
-    "Каким-то образом данный джентельмен поразил толстого"
+    "Каким-то образом, данный джентельмен поразил толстого"
     "Прошёл день"
     "Всё это время Искандер лежал без сознания на полу столовой"
     "После пробуждения, он плохо себя чувствовал, но всё-таки дошёл до дома"
@@ -849,3 +855,47 @@ label opus:
     "Лампочка лопнула"
     ukrop "Спокойнее кент"
     isk "Съебались, мне надо в туалет"
+    isk "{alpha=*0.5}Как же мне хуёво{/alpha}"
+    "Искандера сильно тошнило"
+    "Ближе к ночи ему становилось всё хуже"
+    "Он становился всё агрессивнее"
+    "Утро следующего дня"
+    "Кекс и укроп заметили что-то неладное"
+    ukrop "Искандер, вставай, прости нас"
+    isk "Укроп, ты?"
+    ukrop "Да, кекс тоже тут"
+    keks "Ты как?"
+    isk "Да..."
+    isk "Нормально..."
+    isk "Кентавры, это вы меня простите, на меня что-то нашло, какая-то невъебенно ужасная болезнь"
+    ukrop "Да всё ок, не парься"
+    keks "Всё в поряде"
+    keks "На лучше раскумарь вяленького"
+    isk "Не в этот раз, я лучше пойду прогуляюсь"
+    play sound domofon
+    play ambience crickets
+    isk "{alpha=*0.5}Что это за ёбань со мной...{/alpha}"
+    isk "{alpha=*0.5}Неужели тефтельки от тёти Любы были испорчены{/alpha}"
+    isk "{alpha=*0.5}Да не, хуйню несу{/alpha}"
+    stop ambience
+    play sound bom2
+    scene kvartira_boom with dissolve1
+    play sound contus
+    isk "..."
+    isk "..."
+    isk "..."
+    isk "Чт..."
+    isk "Что произошло"
+    isk "Кекс"
+    isk "Укроп"
+    isk "Что с ними?"
+
+
+
+
+                                                                здесь нужен новый перс, я хз как его сделать, крч первый соперник искандера
+    unnv "Вряд ли ты с ними ещё увидешься"
+    isk "ЧТО ТЫ С НИМИ СДЕЛАЛ, ХУЕСОС?"
+    unnv "А ты не видишь?"
+    isk "{alpha=*0.5}Я снесу это долбаёбу башню, он даже глазом не моргнёт{/alpha}"
+    unnv "WITHOUT DATE!!!" with vpunch
