@@ -156,7 +156,7 @@
     image dush_2 = "mods/shkoda_aktavia/kartinki/Keks_prizident/Ukrop_seks2.png"
     $ usa = "mods/shkoda_aktavia/kartinki/Keks_prizident/after dark.mp3"
     $ otel_sound = "mods/shkoda_aktavia/kartinki/Keks_prizident/lift music.mp3"
-    votes = "mods/shkoda_aktavia/kartinki/Keks_prizident/vibori.png"
+    image votes = "mods/shkoda_aktavia/kartinki/Keks_prizident/vibori.png"
     $ domofon = "mods/shkoda_aktavia/kartinki/Keks_prizident/domofon.mp3"
     $ bom2 = "mods/shkoda_aktavia/kartinki/Keks_prizident/bom2.mp3"
     $ contus = "mods/shkoda_aktavia/kartinki/Keks_prizident/contus.mp3"
@@ -820,7 +820,7 @@ label opus:
     "В тот же вечер Кекс приехал в департамент сохранения наркотиков и, так скажем, пожертвовал департаменту кексов"
     "Так Искандер с Кексом скорешились и победили черножопого гондона"
     "Первой реформой было депортирование Обамы нахуй в Россию"
-    scene obama2 dissolve1
+    scene obama2 with dissolve
     "Теперь он работает кассиром в пятёрочке, больше о нём информации нет"
     "Этим действием будущая группа ДТК насолила Хасбуле, ведь тому было очень выгодно при прошлом президенте"
     "Обама никогда не ебал карликов в шоколадную пещеру"
@@ -831,6 +831,7 @@ label opus:
     show karlik3 at right
     karliki "Пора вернуть украденное, у вас есть 30 дней, иначе вам пиздец"
     scene orn with dissolve2
+    stop music
     "Прошло 2 дня"
     "Искандер хавал, в своём лицее"
     "Как вдруг в столовую влетает толстый бандит"
@@ -908,7 +909,7 @@ label opus:
     isk "{alpha=*0.5}Да не, хуйню несу{/alpha}"
     stop ambience
     play sound bom2
-    scene kvartira_boom with dissolve1
+    scene kvartira_boom with dissolve
     play sound contus
     isk "..."
     isk "..."
@@ -918,11 +919,6 @@ label opus:
     isk "Кекс"
     isk "Укроп"
     isk "Что с ними?"
-
-
-
-
-                                                                здесь нужен новый перс, я хз как его сделать, крч первый соперник искандера
     unnv "Вряд ли ты с ними ещё увидешься"
     isk "ЧТО ТЫ С НИМИ СДЕЛАЛ, ХУЕСОС?"
     unnv "А ты не видишь?"
