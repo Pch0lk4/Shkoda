@@ -162,6 +162,11 @@
     $ contus = "mods/shkoda_aktavia/kartinki/Keks_prizident/contus.mp3"
     $ crickets = "mods/shkoda_aktavia/kartinki/Keks_prizident/crickets.mp3"
     image kvartira_boom = "mods/shkoda_aktavia/kartinki/keks_prizident/kvartira_boom.png"
+    $ shower = "mods/shkoda_aktavia/kartinki/Keks_prizident/shower.mp3"
+    $ fallendown = "mods/shkoda_aktavia/kartinki/Keks_prizident/fallendown.mp3"
+    image druid = "mods/shkoda_aktavia/kartinki/keks_prizident/druid.png"
+    image dom_forest = "mods/shkoda_aktavia/kartinki/keks_prizident/dom_forest.png"
+    image chasha = "mods/shkoda_aktavia/kartinki/keks_prizident/chasha.png"
 label shkoda_start:
     "..."
     "..."
@@ -763,6 +768,8 @@ label opus:
     keks "Не волнуйся, я рядом"
     "Укроп уснул"
     scene orn with dissolve2
+    stop music
+    play music otel_sound
     "Через некоторое время они заселилсь в отель"
     "Стоит сказать, что отель был неплохой, хотя нет, отличный"
     scene otel with dissolve
@@ -773,6 +780,8 @@ label opus:
     "Кекс с Укропом уже давно не были в нём, долбаёбы вонючие"
     "Давайте посмотрим на него"
     scene dush_1 with dissolve2
+    stop music
+    play ambience shower
     "Какого хуя?"
     "Эти два конченых обдолбыша уже позвали шлюху?"
     scene dush_2 with dissolve
@@ -855,28 +864,30 @@ label opus:
     "..."
                # сцена сна где искандер встречает лешия в своем лесочке у дома, и потом сам становится им
                # музыка: Fallen Down (возмоно она есть уже в папке с игрой)
+    play music fallendown
     "Пустота"
-    "Искандер как всегда идет в школу ко второму, так как у него была физра первым"
+    "Искандер, как всегда идет в школу ко второму, так как у него была физра первым"
     "..."
-    "Как всегда он был счастлив"
+    "Он был счастлив"
     "Мама подарила ему нового База Лайтера"
-    "Как вдруг искандер не замечает огромного лестного друида и врезается в него"
-    show #там кароче лесной друид
+    "Как вдруг, Искандер не замечает огромного лестного друида и врезается в него"
+    show druid
     "Друид просто стоял"
     "..."
     isk "Простите..."
-    "Друид молчал подняв голову вверх"
+    "Друид молчал, подняв голову вверх"
     "..."
-    "Друид по рассказам многих живет в лесу"
+    "Он по рассказам многих живет в лесу"
     "По некоторым легендам если встретить друида то можно познать тайны нашей планеты..."
-    "Друид увидел Искандера"
+    "Лесной житель увидел Искандера"
     "Искандер испугался"
     "Тренд взял за руку Искандера и повел его в лес"
-    "Так как Искандер тупой он пошел за ним..."
-            # Должна быть чаща леса
+    "Так как Искандер тупой, он пошел за ним..."
+    scene chasha with dissolve
     "Они все шли и шли"
     "как вдруг.."
     "Искандер увидел это..."
+    scene dom with dissolve2
     scene hata_k_u
     keks "{alpha=*0.7}Искандер{/alpha}"
     keks "Искандер"
@@ -923,7 +934,7 @@ label opus:
     isk "ЧТО ТЫ С НИМИ СДЕЛАЛ, ХУЕСОС?"
     unnv "А ты не видишь?"
     isk "{alpha=*0.5}Я снесу это долбаёбу башню, он даже глазом не моргнёт{/alpha}"
-    unnv "ПОЛКОВНИК АНУС!!!" with vpunch
-
-
-
+    unnv "RESTORATOR!!!" with vpunch
+    isk "Ты конч, что за придурок рядом с тобой заспавнился?"
+    unnv "Ты его видишь?"
+    unnv "Странно..."
