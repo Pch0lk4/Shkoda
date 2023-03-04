@@ -894,11 +894,12 @@ label opus:
     scene orn dissolve2
     isk "Папа..."
             # Папа искандера
-    scene baik
+    scene baik dissolve2
     "..."
-    scene BDSM_rofl
+    scene BDSM_rofl dissolve2
     # Комната тренда
-    scene hata_k_u
+    "Тогда Жизнь Искандера заиграла по другому..."
+    scene hata_k_u dissolve2
     keks "{alpha=*0.7}Искандер{/alpha}"
     keks "Искандер"
     keks "Искандер" with vpunch
@@ -946,5 +947,16 @@ label opus:
     isk "{alpha=*0.5}Я снесу это долбаёбу башню, он даже глазом не моргнёт{/alpha}"
     unnv "RESTORATOR!!!" with vpunch
     isk "Ты конч, что за придурок рядом с тобой заспавнился?"
-    unnv "Ты его видишь?"
-    unnv "Странно..."
+    unnv "Значит ты его видишь?"
+    unnv "Походу у тебя тоже есть стенд..."
+    isk "Че ты мелишь хуесос?"
+    "Искандер налетел с кулаками на данного сэра"
+    "Удар" with vpunch
+    "Искандер отлетел" with vpunch
+    isk "Вот бы в него с дробовика ебануть..."
+    scene orn dissolve2
+    "..."
+    scene restorator
+    # Тут типа статискика стенда ресторатора 
+    scene sanya sudno
+    # Тут типа стенд искана
